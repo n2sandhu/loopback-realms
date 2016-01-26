@@ -1,0 +1,27 @@
+{
+  "name": "organisation",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "OrgUsers": {
+      "type": "hasMany",
+      "model": "organisationUser",
+      "foreignKey": "orgId",
+      "properties": {
+        "name": "realm"
+      }
+    }
+  },
+  "acls": [],
+  "methods": []
+}
