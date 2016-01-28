@@ -36,7 +36,7 @@ dataSource.automigrate(['User', 'AccessToken', 'ACL', 'RoleMapping', 'Role', 'or
                         "username": "johnB",
                         "lastName": "Bajtos",
                         "firstName": "John",
-                        "email": "john@gmail.com",
+                        "email": "johnbajtos@yahoo.com",
                         "password": "123"
                     },
                     function(err, user) {
@@ -45,12 +45,8 @@ dataSource.automigrate(['User', 'AccessToken', 'ACL', 'RoleMapping', 'Role', 'or
                     }
                 );
 
-            }
-        );
-
-
-        Organisation.create({name: 'Adelaide Club'}, function(err, org1) {
 
             }
         );
+
     });
